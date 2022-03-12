@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(circle, #c6ddd1, #74b394);
+}
+
+#header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(21, 63, 44);
+    font-size: 50px;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.person {
+  background-color: aliceblue;
+  border-radius: 50px;
+  padding: 10%;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px grey;
+  width: 17rem;
+}
+
+#pic {
+  position: relative;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 20px solid #f3f4fa;
+}
+
+#title {
+  font-weight: bolder;
+  font-size: 25px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#desc {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+#email {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+} 
+.fab {
+  padding: 6.5px;
+  font-size: 30px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+a {
+  color: #333333;
+  font-weight: 400;
+  outline: none;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+p {
+  padding: 0;
+  margin: 0 0 15px 0;
+  color: #454545;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0 0 15px 0;
+  color: #333333;
+  font-weight: 700;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
+  margin-top: 70px;
+  text-align: center;
+}
+.section-title h1 {
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+.section-title h1::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 3px;
+  right: 32%;
+  background-color: #50c5fc;
+  bottom: -5px;
+}
+.container .section-title h1::before {
+  left: 30%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+.column {
+  margin: 20px 0 40px 40px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  transition: 0.3s;
+}
+.team {
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 10px;
+}
+
+
+.team .team-content {
+  padding: 80px 20px 20px 20px;
+  margin-top: -80px;
+  text-align: center;
+  background: #f3f4fa;
+  border-radius: 10px;
+}
+.team .team-content h2 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.team .team-content h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.team .team-content h4 {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.team .team-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.team .team-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s;
+  font-size: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.column:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/* Mobile Responsive */
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .column {
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .column {
+    max-width: 33.333333%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .column {
+    max-width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

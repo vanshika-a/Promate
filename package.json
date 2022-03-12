@@ -1,0 +1,28 @@
+{
+  "name": "promate",
+  "version": "1.0.0",
+  "description": "A web-app that helps in finding desired project partners",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanshika-a/Promate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanshika-a/Promate/issues"
+  },
+  "homepage": "https://github.com/vanshika-a/Promate#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "bootstrap": "^3.4.1",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.5"
+  }
+}
